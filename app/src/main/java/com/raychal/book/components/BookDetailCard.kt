@@ -83,19 +83,20 @@ fun BookImageContentView(
                 text = title,
                 style = typography.h6,
                 textAlign = TextAlign.Center,
-                color = text
+                color = MaterialTheme.colors.primaryVariant
             )
             Spacer(modifier = Modifier.height(12.dp))
             Text(
-                text = authors.toString(),
+                text = "by".plus(authors.toString()),
                 style = typography.caption,
                 textAlign = TextAlign.Center,
-                color = text.copy(0.7F)
+                color = MaterialTheme.colors.primaryVariant.copy(0.7F)
             )
             Spacer(modifier = Modifier.height(12.dp))
             FlowRow {
                 categories.forEach {
                     ChipView(category = it)
+                    Spacer(modifier = Modifier.width(16.dp))
                 }
             }
         }

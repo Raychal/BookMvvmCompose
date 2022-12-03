@@ -63,7 +63,7 @@ fun ItemBookList(
             // Content
             Column {
                 Text(
-                    text = "b".plus(author),
+                    text = "by".plus(author),
                     style = typography.caption,
                     color = MaterialTheme.colors.primaryVariant.copy(0.7F)
                 )
@@ -77,6 +77,7 @@ fun ItemBookList(
                 FlowRow {
                     categories.forEach {
                         ChipView(category = it)
+                        Spacer(modifier = Modifier.width(8.dp))
                     }
                 }
             }
