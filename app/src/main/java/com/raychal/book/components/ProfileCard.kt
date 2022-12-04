@@ -3,7 +3,9 @@ package com.raychal.book.components
 import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
@@ -12,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
@@ -20,13 +23,11 @@ import com.raychal.book.ui.theme.typography
 import com.raychal.book.utils.DateFormatter.formatLongDate
 
 @Composable
-fun BookDetailCard(
-    title: String,
-    authors: List<String>,
-    thumbnailUrl: String,
-    date: String?,
-    status: String,
-    categories: List<String>
+fun ProfileCard(
+    fullName: String,
+    nicName: String,
+    email: String,
+    thumbnailUrl: String
 ) {
     // transparent white bg
     Box(
@@ -49,19 +50,17 @@ fun BookDetailCard(
         )
 
         // Content
-        BookImageContentView(title, authors, thumbnailUrl, date, status, categories)
+        ProfileContentView(fullName, nicName, email, thumbnailUrl)
     }
 }
 
 @SuppressLint("SimpleDateFormat")
 @Composable
-fun BookImageContentView(
-    title: String,
-    authors: List<String>,
-    thumbnailUrl: String,
-    date: String?,
-    status: String,
-    categories: List<String>
+fun ProfileContentView(
+    fullName: String,
+    nicName: String,
+    email: String,
+    thumbnailUrl: String
 ) {
     // content
     Column(modifier = Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
@@ -71,9 +70,13 @@ fun BookImageContentView(
             painter = rememberImagePainter(
                 data = thumbnailUrl
             ),
-            contentDescription = title,
+            contentDescription = fullName,
+            contentScale = ContentScale.Crop,
             modifier = Modifier
-                .size(240.dp, 140.dp),
+                .size(128.dp)
+                .clip(CircleShape)
+                .border(2.dp, MaterialTheme.colors.primaryVariant.copy(0.7F), CircleShape)
+//                .size(240.dp, 140.dp),
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -86,40 +89,23 @@ fun BookImageContentView(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = title,
+                text = fullName,
                 style = typography.h6,
                 textAlign = TextAlign.Center,
                 color = MaterialTheme.colors.primaryVariant
             )
-            Spacer(modifier = Modifier.height(6.dp))
             Text(
-                text = "by ".plus(authors.toString()),
+                text = nicName,
                 style = typography.caption,
-                textAlign = TextAlign.Left,
+                textAlign = TextAlign.Center,
                 color = MaterialTheme.colors.primaryVariant.copy(0.7F)
             )
-            if (date != null) {
-                Text(
-//                    text = "Published Date ".plus(formatLongDate(date)).ifEmpty { " " },
-                    text = if (date.isEmpty()) "" else "Published Date ".plus(formatLongDate(date)),
-                    style = typography.caption,
-                    textAlign = TextAlign.Left,
-                    color = MaterialTheme.colors.primaryVariant.copy(0.7F)
-                )
-            }
             Text(
-                text = "Status ".plus(status),
+                text = email,
                 style = typography.caption,
-                textAlign = TextAlign.Left,
+                textAlign = TextAlign.Center,
                 color = MaterialTheme.colors.primaryVariant.copy(0.7F)
             )
-            Spacer(modifier = Modifier.height(12.dp))
-            FlowRow {
-                categories.forEach {
-                    ChipView(category = it)
-                    Spacer(modifier = Modifier.width(16.dp))
-                }
-            }
         }
     }
 }

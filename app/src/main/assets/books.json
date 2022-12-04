@@ -1419,6 +1419,7 @@
     "title": "Groovy in Action, Second Edition",
     "isbn": "1935182447",
     "pageCount": 700,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/koenig2.jpg",
     "shortDescription": "Groovy in Action, Second Edition is a thoroughly-revised, comprehensive guide to Groovy programming. It introduces Java developers to the dynamic features that Groovy provides, and shows you how to apply Groovy to a range of tasks including building new apps, integration with existing code, and DSL development.",
     "longDescription": "The first edition of Groovy in Action is the undisputed definitive reference on the Groovy language. Written by core members of the Groovy language team, this book presents Groovy like none other can   from the inside out. Since its introduction a few years back, Groovy has grown from an upstart dynamic language for the JVM to become an integral part of any Java developer's toolbox. Projects like Grails and Griffon have extended Groovy's reach into the web and desktop app world.    Groovy in Action, Second Edition is a thoroughly-revised, comprehensive guide to Groovy programming. It introduces Java developers to the dynamic features that Groovy provides, and shows you how to apply Groovy to a range of tasks including building new apps, integration with existing code, and DSL development.    This book introduces Groovy by example, presenting lots of reusable code while explaining the underlying concepts. Java developers new to Groovy find a smooth transition into the dynamic programming world. Groovy experts gain a solid reference that challenges them to explore Groovy deeply and creatively.    For readers learning it from scratch. Groovy in Action thoroughly moves through the Groovy basics, including:    Groovy's unique approach of optional typing  Simple and collective Groovy data types  Working with closures and Groovy control structures  The merits of Metaprogramming  Readers are presented with rich and detailed examples illustrating Groovy's enhancements to Java, including:    How to work with builders and the GDK  Database and XML programming with Groovy  Concurrency for the multicore era: actors, asynchronous collections and dataflow  Building Domain Specific languages   a very hot topic!  Groovy in Action then demonstrates how to integrate Groovy in Java projects and provides:    Tips and Tricks  Unit testing and build support  Groovy frameworks, including Grails, Griffon, and Groovy on Windows",
@@ -3223,6 +3224,7 @@
     "title": "The Engaging Web",
     "isbn": "9781935182078",
     "pageCount": 325,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/zichermann.jpg",
     "shortDescription": "The Engaging Web: How Fun and Games Improve Your Site shows web developers how to incorporate games into websites. This book will help you decode the possibilities and provide a series of proven and tangible strategies that any web developer, producer, or product manager can use to implement games in their website. Whether you're looking to make games the centerpiece of your site, an added-value feature, or you just want to engage and excite your users, The Engaging Web will help you develop a strategy that harnesses the power of games.",
     "longDescription": "Games are the fastest-growing and stickiest form of entertainment. For a website, games offer powerful potential to acquire new users, build engagement, and enhance revenue. Implementing games in a website can be complicated, though. There are hundreds of technical and process options to choose from, and the landscape is constantly shifting.    The Engaging Web: How Fun and Games Improve Your Site shows web developers how to incorporate games into websites. This book will help you decode the possibilities and provide a series of proven and tangible strategies that any web developer, producer, or product manager can use to implement games in their website. Whether you're looking to make games the centerpiece of your site, an added-value feature, or you just want to engage and excite your users, The Engaging Web will help you develop a strategy that harnesses the power of games.    Through this book, you will take away an in-depth understanding of the current state of the art in game and web planning and integration methodologies. It begins by presenting an understanding of basic \"funware\" principles - or how non-designers can use games to further business objectives. Powerful funware designs like frequent flyer programs, casino games, and leaderboard/ladders will be deconstructed and componentized so that you can leverage their strengths for your specific site and business objectives.    You'll then investigate the three basic recipes for melding games with the web, and look at specific examples of integration approaches that have been successfully deployed across various industries. Finally, you'll examine social networking considerations and look at code examples.    Whether you're building a business or consumer site, games and funware design can be a powerful weapon in your battle for user engagement, stickiness, and revenue. The Engaging Web is the field guide that gives you the best tactics, techniques, and strategies for winning the war.    WHAT'S INSIDE        * Understanding funware and game design      * Principal funware designs: casinos frequent flyer programs, leaderboards      * Matching games to your business objectives      * Recipes for implementing games on your site      * Games, social networking and you      * Code examples",
@@ -3234,6 +3236,7 @@
     "title": "Enterprise OSGi In Action",
     "isbn": "1617290130",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cummins.jpg",
     "status": "PUBLISH",
     "authors": ["Holly Cummins", "Timothy Ward"],
@@ -3371,6 +3374,7 @@
     "title": "Unit Testing in C++",
     "isbn": "1617290386",
     "pageCount": 0,
+    
     "status": "PUBLISH",
     "authors": ["Bruce Trask", "Angel Roman"],
     "categories": []
@@ -3379,6 +3383,7 @@
     "title": "Big Data",
     "isbn": "1617290343",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/marz.jpg",
     "status": "MEAP",
     "authors": ["Nathan Marz", "James Warren"],
@@ -3429,6 +3434,7 @@
     "title": "Java Persistence with Hibernate, Second Edition",
     "isbn": "1617290459",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bauer3.jpg",
     "status": "MEAP",
     "authors": ["Christian Bauer", "Gavin King", "", "Gary Gregory"],
@@ -3498,6 +3504,7 @@
     "title": "Augmented Reality Revealed",
     "isbn": "1617290165",
     "pageCount": 0,
+    
     "status": "MEAP",
     "authors": ["Robert A. Rice Jr."],
     "categories": []
@@ -3506,6 +3513,7 @@
     "title": "Building Well-Structured JavaScript Applications",
     "isbn": "1617290599",
     "pageCount": 0,
+    
     "status": "MEAP",
     "authors": ["Julio C. Ody"],
     "categories": []
@@ -3609,6 +3617,7 @@
     "title": "Neo4j in Action",
     "isbn": "1617290769",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/partner.jpg",
     "status": "MEAP",
     "authors": ["Jonas Partner", "Aleksa Vukotic", "", "Nicki Watt"],
@@ -3628,6 +3637,7 @@
     "title": "Functional Programming in Scala",
     "isbn": "1617290653",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bjarnason.jpg",
     "status": "MEAP",
     "authors": ["Paul Chiusano", "Rúnar Bjarnason"],
@@ -3647,6 +3657,7 @@
     "title": "Node.js in Practice",
     "isbn": "1617290939",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/templier2.jpg",
     "status": "MEAP",
     "authors": ["Alex Young", "Marc Harter"],
@@ -3686,6 +3697,7 @@
     "title": "Mondrian in Action",
     "isbn": "161729098X",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/back.jpg",
     "status": "PUBLISH",
     "authors": ["William Back", "Nicholas Goodman", "", "Julian Hyde"],
@@ -3695,6 +3707,7 @@
     "title": "RabbitMQ in Depth",
     "isbn": "1617291005",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/roy.jpg",
     "status": "MEAP",
     "authors": ["Gavin M. Roy"],
@@ -3704,6 +3717,7 @@
     "title": "Akka in Action",
     "isbn": "1617291013",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/roestenburg.jpg",
     "status": "MEAP",
     "authors": [
@@ -3777,6 +3791,7 @@
     "title": "Grails in Action, Second Edition",
     "isbn": "1617290963",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/gsmith2.jpg",
     "status": "MEAP",
     "authors": ["Glen Smith", "Peter Ledbrook"],
@@ -3786,6 +3801,7 @@
     "title": "Rails 4 in Action",
     "isbn": "1617291099",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bigg2.jpg",
     "status": "MEAP",
     "authors": ["Ryan Bigg", "Yehuda Katz", "and Steve Klabnik", ""],
@@ -3825,6 +3841,7 @@
     "title": "CMIS and Apache Chemistry in Action",
     "isbn": "1617291153",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mueller.jpg",
     "status": "PUBLISH",
     "authors": ["Florian Müller", "Jay Brown", "Jeff Potts"],
@@ -3834,6 +3851,7 @@
     "title": "Action Guide (aka VB .NET)",
     "isbn": "1930110324",
     "pageCount": 0,
+    
     "status": "PUBLISH",
     "authors": ["Paul Messick"],
     "categories": []
@@ -3842,6 +3860,7 @@
     "title": "Learn Active Directory Management in a Month of Lunches",
     "isbn": "1617291196",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/siddaway3.jpg",
     "status": "PUBLISH",
     "authors": ["Richard Siddaway"],
@@ -3851,6 +3870,7 @@
     "title": "Spring in Action, Fourth Edition",
     "isbn": "161729120X",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/walls5.jpg",
     "status": "MEAP",
     "authors": ["Craig Walls"],
@@ -3870,6 +3890,7 @@
     "title": "The Responsive Web",
     "isbn": "1617291242",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/carver.jpg",
     "status": "MEAP",
     "authors": ["Matthew Carver"],
@@ -3889,6 +3910,7 @@
     "title": "SBT in Action",
     "isbn": "1617291277",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/suereth2.jpg",
     "status": "MEAP",
     "authors": ["Joshua Suereth", "Matthew Farwell"],
@@ -3898,6 +3920,7 @@
     "title": "PowerShell Deep Dives",
     "isbn": "1617291315",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hicks.jpg",
     "status": "PUBLISH",
     "authors": [
@@ -3923,6 +3946,7 @@
     "title": "Scalatra in Action",
     "isbn": "1617291293",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/carrero2.jpg",
     "status": "MEAP",
     "authors": [
@@ -3939,6 +3963,7 @@
     "title": "AngularJS in Action",
     "isbn": "1617291331",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bford.jpg",
     "status": "MEAP",
     "authors": ["Brian Ford", "Lukas Ruebbelke"],
@@ -3948,6 +3973,7 @@
     "title": "Software Development Metrics",
     "isbn": "1617291358",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/nicolette.jpg",
     "status": "MEAP",
     "authors": ["David Nicolette"],
@@ -3957,6 +3983,7 @@
     "title": "F# Deep Dives",
     "isbn": "1617291323",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/petricek_trelford.jpg",
     "status": "MEAP",
     "authors": ["Tomas Petricek", "Phillip Trelford"],
@@ -3976,6 +4003,7 @@
     "title": "PostGIS in Action, Second Edition",
     "isbn": "1617291390",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/obe2.jpg",
     "status": "MEAP",
     "authors": ["Regina Obe", "Leo Hsu"],
@@ -3985,6 +4013,7 @@
     "title": "R in Action, Second Edition",
     "isbn": "1617291382",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kabacoff2.jpg",
     "status": "MEAP",
     "authors": ["Robert Kabacoff"],
@@ -4014,6 +4043,7 @@
     "title": "Hello App Inventor!",
     "isbn": "1617291439",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/beer.jpg",
     "status": "MEAP",
     "authors": ["Paula Beer", "Carl Simmons"],
@@ -4033,6 +4063,7 @@
     "title": "Netty in Action",
     "isbn": "1617291471",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/maurer.jpg",
     "status": "MEAP",
     "authors": ["Norman Maurer", "Courtney Robinson"],
@@ -4042,6 +4073,7 @@
     "title": "RavenDB in Action",
     "isbn": "1617291501",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/syn-hershko.jpg",
     "status": "MEAP",
     "authors": ["Itamar Syn-Hershko"],
@@ -4051,6 +4083,7 @@
     "title": "OCP Java SE 7 Programmer II Certification Guide",
     "isbn": "161729148X",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/gupta2.jpg",
     "status": "MEAP",
     "authors": ["Mala Gupta"],
@@ -4060,6 +4093,7 @@
     "title": "Backbone.js in Action",
     "isbn": "1617291536",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/breed.jpg",
     "status": "MEAP",
     "authors": ["Samuel M. Breed", "Cole Krumbholz", "", "Phillip Whisenhunt"],
@@ -4069,6 +4103,7 @@
     "title": "Clojure in Action, Second Edition",
     "isbn": "1617291528",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/rathore2.jpg",
     "status": "MEAP",
     "authors": ["Amit Rathore"],
@@ -4088,6 +4123,7 @@
     "title": "ArcGIS Web Development",
     "isbn": "1617291617",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/rubalcava.jpg",
     "status": "MEAP",
     "authors": ["Rene Rubalcava"],
@@ -4097,6 +4133,7 @@
     "title": "Elasticsearch in Action",
     "isbn": "1617291625",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hinman.jpg",
     "status": "MEAP",
     "authors": ["Radu Gheorghe", "Matthew Lee Hinman"],
@@ -4106,6 +4143,7 @@
     "title": "Learn SCCM 2012 in a Month of Lunches",
     "isbn": "1617291684",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bannan.jpg",
     "status": "MEAP",
     "authors": ["James Bannan"],
@@ -4115,6 +4153,7 @@
     "title": "Programming for Musicians and Digital Artists",
     "isbn": "1617291706",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kapur.jpg",
     "status": "MEAP",
     "authors": ["Ajay Kapur", "Perry Cook", "Spencer Salazar", "", "Ge Wang"],
@@ -4124,6 +4163,7 @@
     "title": "BDD in Action",
     "isbn": "161729165X",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/smart.jpg",
     "status": "MEAP",
     "authors": ["John F. Smart"],
@@ -4148,6 +4188,7 @@
     "title": "Titanium Alloy in Action",
     "isbn": "1617291749",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alcocer.jpg",
     "status": "MEAP",
     "authors": ["Ricardo Alcocer"],
@@ -4157,6 +4198,7 @@
     "title": "Giraph in Action",
     "isbn": "1617291757",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/martella.jpg",
     "status": "MEAP",
     "authors": [
@@ -4181,6 +4223,7 @@
     "title": "Go in Action",
     "isbn": "1617291781",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ketelsen.jpg",
     "status": "MEAP",
     "authors": ["Brian Ketelsen", "Erik St. Martin", "", "William Kennedy"],
@@ -4190,6 +4233,7 @@
     "title": "The Programmer's Guide to Apache Thrift ",
     "isbn": "1617291811",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/abernethy.jpg",
     "status": "MEAP",
     "authors": ["Randy Abernethy"],
@@ -4199,6 +4243,7 @@
     "title": "Grokking Functional Programming",
     "isbn": "1617291838",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/khan.jpg",
     "status": "MEAP",
     "authors": ["Aslam Khan"],
@@ -4208,6 +4253,7 @@
     "title": "CORS in Action",
     "isbn": "161729182X",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hossain.jpg",
     "status": "MEAP",
     "authors": ["Monsur Hossain"],
@@ -4217,6 +4263,7 @@
     "title": "Reactive Design Patterns",
     "isbn": "1617291803",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kuhn.jpg",
     "status": "MEAP",
     "authors": ["Roland Kuhn", "Jamie Allen"],
@@ -4226,6 +4273,7 @@
     "title": "Storm Applied",
     "isbn": "1617291897",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/pathirana.jpg",
     "status": "MEAP",
     "authors": ["Sean Allen", "Peter Pathirana", "", "Matthew Jankowski"],
@@ -4235,6 +4283,7 @@
     "title": "Real-World Machine Learning",
     "isbn": "1617291927",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/brink.jpg",
     "status": "MEAP",
     "authors": ["Henrik Brink", "Joseph Richards"],
@@ -4244,6 +4293,7 @@
     "title": "jQuery UI in Action",
     "isbn": "1617291935",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/vantoll.jpg",
     "status": "MEAP",
     "authors": ["Theodore J. (T.J.) VanToll III"],
@@ -4253,6 +4303,7 @@
     "title": "Web Components in Action",
     "isbn": "1617291943",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/buckett2.jpg",
     "status": "MEAP",
     "authors": ["Chris Buckett"],
@@ -4262,6 +4313,7 @@
     "title": "JavaScript Application Design",
     "isbn": "1617291951",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bevacqua.jpg",
     "status": "MEAP",
     "authors": ["Nicolas G. Bevacqua"],
@@ -4271,6 +4323,7 @@
     "title": "Git in Practice",
     "isbn": "1617291978",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mcquaid.jpg",
     "status": "MEAP",
     "authors": ["Mike McQuaid"],
@@ -4280,6 +4333,7 @@
     "title": "Impala in Action",
     "isbn": "1617291986",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/saltzer.jpg",
     "status": "MEAP",
     "authors": ["Richard L. Saltzer", "Istvan Szegedi"],
@@ -4289,6 +4343,7 @@
     "title": "Java 8 in Action",
     "isbn": "1617291994",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/urma.jpg",
     "status": "MEAP",
     "authors": ["Raoul-Gabriel Urma", "Mario Fusco", "", "Alan Mycroft"],
@@ -4298,6 +4353,7 @@
     "title": "Elixir in Action",
     "isbn": "161729201X",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/juric.jpg",
     "status": "MEAP",
     "authors": ["Saša Juric´"],
@@ -4307,6 +4363,7 @@
     "title": "MongoDB in Action, Second Edition",
     "isbn": "1617291609",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/banker2.jpg",
     "status": "MEAP",
     "authors": [
@@ -4323,6 +4380,7 @@
     "title": "Getting MEAN with Mongo, Express, Angular, and Node",
     "isbn": "1617292036",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/sholmes.jpg",
     "status": "MEAP",
     "authors": ["Simon Holmes"],
@@ -4332,6 +4390,7 @@
     "title": "jQuery in Action, Third Edition",
     "isbn": "1617292079",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/derosa.jpg",
     "status": "MEAP",
     "authors": ["Bear Bibeault", "Yehuda Katz", "", "Aurelio De Rosa"],
@@ -4341,6 +4400,7 @@
     "title": "D3.js in Action",
     "isbn": "1617292117",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/meeks.jpg",
     "status": "MEAP",
     "authors": ["Elijah Meeks"],
@@ -4360,6 +4420,7 @@
     "title": "Geoprocessing with Python",
     "isbn": "1617292141",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/garrard.jpg",
     "status": "MEAP",
     "authors": ["Chris Garrard"],
@@ -4369,6 +4430,7 @@
     "title": "Barcodes with iOS",
     "isbn": "161729215X",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/drobnik.jpg",
     "status": "MEAP",
     "authors": ["Oliver Drobnik"],
@@ -4378,6 +4440,7 @@
     "title": "Chef in Action",
     "isbn": "1617292214",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/aivaliotis.jpg",
     "status": "MEAP",
     "authors": ["Dimitri Aivaliotis"],
@@ -4387,6 +4450,7 @@
     "title": "Hadoop in Practice, Second Edition",
     "isbn": "1617292222",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/holmes2.jpg",
     "status": "MEAP",
     "authors": ["Alex Holmes"],
@@ -4396,6 +4460,7 @@
     "title": "Oculus Rift in Action",
     "isbn": "1617292192",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bdavis.jpg",
     "status": "MEAP",
     "authors": ["Bradley Austin Davis", "Karen Bryla", "", "Alex Benton"],
@@ -4405,6 +4470,7 @@
     "title": "OpenStack in Action",
     "isbn": "1617292168",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bumgardner.jpg",
     "status": "MEAP",
     "authors": ["Cody Bumgardner"],
@@ -4414,6 +4480,7 @@
     "title": "PowerShell in Depth, Second Edition",
     "isbn": "1617292184",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/jones6.jpg",
     "status": "MEAP",
     "authors": ["Don Jones", "Jeffery Hicks", "", "Richard Siddaway"],
@@ -4423,6 +4490,7 @@
     "title": "Practical Probabilistic Programming",
     "isbn": "1617292338",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/pfeffer.jpg",
     "status": "MEAP",
     "authors": ["Avi Pfeffer"],
@@ -4432,6 +4500,7 @@
     "title": "Unity in Action",
     "isbn": "161729232X",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hocking.jpg",
     "status": "MEAP",
     "authors": ["Joseph Hocking"],
@@ -4441,6 +4510,7 @@
     "title": "Express.js in Action",
     "isbn": "1617292427",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hahn.jpg",
     "status": "MEAP",
     "authors": ["Evan M. Hahn"],
@@ -4450,6 +4520,7 @@
     "title": "Learn Git in a Month of Lunches",
     "isbn": "1617292419",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/umali.jpg",
     "status": "MEAP",
     "authors": ["Rick Umali"],
@@ -4459,6 +4530,7 @@
     "title": "Understanding SPAs",
     "isbn": "1617292435",
     "pageCount": 0,
+    
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/scott2.jpg",
     "status": "MEAP",
     "authors": ["Emmit A. Scott", "Jr."],

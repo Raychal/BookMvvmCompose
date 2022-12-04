@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -20,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
 import com.raychal.book.R
 import com.raychal.book.components.BookDetailCard
+import com.raychal.book.components.ProfileCard
 import com.raychal.book.navigation.MainActions
 import com.raychal.book.ui.theme.typography
 import com.raychal.book.utils.DetailViewState
@@ -47,49 +49,27 @@ fun Profile(viewModel: MainViewModel) {
         is ProfileViewState.Error -> Text(text = "Error found: ${result.exception}")
         is ProfileViewState.Success -> {
             val profile = result.data
-            Log.d("data", profile.toString())
 
             var darkMode by mutableStateOf(true)
 
             LazyColumn {
-                // Book Details Card
+                // Profile Card
                 item {
-                    Text(
-                        text = "Fullname : ".plus(profile.first().fullName),
-                        textAlign = TextAlign.Center
-                    )
+                    ProfileCard(profile.first().fullName, profile.first().nicName, profile.first().email, profile.first().photo)
                 }
 
                 item {
-                    Text(
-                        text = "Nicname : ".plus(profile.first().nicName),
-                        textAlign = TextAlign.Center
-                    )
-                }
-
-                item {
-                    Text(
-                        text = "Email : ".plus(profile.first().email),
-                        textAlign = TextAlign.Center
-                    )
-                }
-
-                item {
-                    Image(
-                        painter = rememberImagePainter(
-                            data = profile.first().photo
-                        ),
-                        contentDescription = "photo",
-                        modifier = Modifier
-                            .size(240.dp, 140.dp),
-                    )
-                }
-
-                item {
-                    Text(
-                        text = "V 1.0.0",
-                        textAlign = TextAlign.Center
-                    )
+                    Spacer(modifier = Modifier.height(400.dp))
+                    Box(modifier = Modifier.fillMaxSize()) {
+                        Text(
+                            text = stringResource(id = R.string.version),
+                            style = typography.subtitle1,
+                            color = MaterialTheme.colors.primaryVariant,
+                            modifier = Modifier
+                                .padding(start = 20.dp, end = 20.dp)
+                                .align(Alignment.BottomCenter)
+                        )
+                    }
                 }
             }
 
