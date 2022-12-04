@@ -15,6 +15,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.raychal.book.view.BookDetailsScreen
 import com.raychal.book.view.BookListScreen
+import com.raychal.book.view.ProfileScreen
 import com.raychal.book.viewModel.MainViewModel
 import java.lang.IllegalStateException
 
@@ -52,6 +53,15 @@ fun NavGraph() {
             viewModel.getBookByID(context = context, isbnNo = isbnNo)
             BookDetailsScreen(viewModel, actions)
         }
+
+        // profile
+        composable(Screen.Profile.route) {
+            val viewModel: MainViewModel = viewModel(
+                factory = HiltViewModelFactory(LocalContext.current, it)
+            )
+            viewModel.getProfile(context = context)
+            ProfileScreen(viewModel, actions)
+        }
     }
 }
 
@@ -63,6 +73,11 @@ class MainActions(navController: NavController) {
 
     val gotoBookDetails: (String) -> Unit = { isbnNo ->
         navController.navigate("${Screen.Details.route}/$isbnNo")
+    }
+
+
+    val gotoProfile: () -> Unit = {
+        navController.navigate(Screen.Profile.route)
     }
 
     val gotoBookList: () -> Unit = {

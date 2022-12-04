@@ -1,6 +1,7 @@
 package com.raychal.book.view
 
 import android.annotation.SuppressLint
+import android.util.Log
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -46,7 +47,7 @@ fun BookDetails(viewModel: MainViewModel) {
             LazyColumn {
                 // Book Details Card
                 item {
-                    BookDetailCard(book.title, book.authors, book.thumbnailUrl, book.categories)
+                    BookDetailCard(book.title, book.authors, book.thumbnailUrl, book.publishedDate, book.status, book.categories)
                 }
 
                 // Description
@@ -60,12 +61,13 @@ fun BookDetails(viewModel: MainViewModel) {
                     )
                     Spacer(modifier = Modifier.height(16.dp))
                     Text(
-                        text = book.longDescription,
+                        text = book.longDescription.ifEmpty { "There is no description" },
                         style = typography.body1,
                         textAlign = TextAlign.Justify,
                         color = MaterialTheme.colors.primaryVariant.copy(0.7F),
                         modifier = Modifier.padding(start = 20.dp, end = 20.dp)
                     )
+                    Spacer(modifier = Modifier.height(16.dp))
                 }
             }
 

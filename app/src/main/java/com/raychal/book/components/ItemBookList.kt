@@ -53,9 +53,9 @@ fun ItemBookList(
                 ),
                 contentDescription = null,
                 modifier = Modifier
-                    .size(98.dp, 145.dp)
+                    .size(96.dp, 145.dp)
                     .padding(16.dp),
-                contentScale = ContentScale.Inside
+                contentScale = ContentScale.Fit
             )
 
             Spacer(modifier = Modifier.width(16.dp))
@@ -63,7 +63,7 @@ fun ItemBookList(
             // Content
             Column {
                 Text(
-                    text = "by".plus(author),
+                    text = "by ".plus(author),
                     style = typography.caption,
                     color = MaterialTheme.colors.primaryVariant.copy(0.7F)
                 )

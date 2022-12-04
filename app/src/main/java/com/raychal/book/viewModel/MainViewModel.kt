@@ -4,9 +4,10 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.raychal.book.model.BookItem
+import com.raychal.book.model.Profile
 import com.raychal.book.utils.DetailViewState
+import com.raychal.book.utils.ProfileViewState
 import com.raychal.book.utils.ViewState
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -17,9 +18,11 @@ class MainViewModel: ViewModel() {
 
     private val _viewState = MutableStateFlow<ViewState>(ViewState.Loading)
     private val _detailViewState = MutableStateFlow<DetailViewState>(DetailViewState.Loading)
+    private val _profileViewState = MutableStateFlow<ProfileViewState>(ProfileViewState.Loading)
 
     val books = _viewState.asStateFlow()
     val bookDetails = _detailViewState.asStateFlow()
+    val profile = _profileViewState.asStateFlow()
 
     // helps to format the JSON
     val format = Json {
@@ -59,6 +62,22 @@ class MainViewModel: ViewModel() {
 
         } catch (e: Exception){
             _detailViewState.value = DetailViewState.Error(e)
+        }
+    }
+
+    // get the data from the Profile.json
+    fun getProfile(context: Context) = viewModelScope.launch {
+        try {
+            // read JSON file
+            val myJson = context.assets.open("profile.json").bufferedReader().use {
+                it.readText()
+            }
+
+            // format JSON
+            val profile = format.decodeFromString<List<Profile>>(myJson)
+            _profileViewState.value = ProfileViewState.Success(profile)
+        } catch (e: Exception) {
+            _profileViewState.value = ProfileViewState.Error(e)
         }
     }
 

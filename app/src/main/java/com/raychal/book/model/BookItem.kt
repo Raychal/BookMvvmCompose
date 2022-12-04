@@ -7,6 +7,7 @@ data class BookItem(
     val authors: List<String> = emptyList(),
     val categories: List<String> = emptyList(),
     val isbn: String = "",
+    val publishedDate: String? = "",
     val longDescription: String = "",
     val pageCount: Int = 0,
     val shortDescription: String = "",
