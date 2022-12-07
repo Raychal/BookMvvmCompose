@@ -2,15 +2,12 @@ package com.raychal.book.view
 
 import android.annotation.SuppressLint
 import android.util.Log
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -18,6 +15,7 @@ import com.raychal.book.R
 import com.raychal.book.components.BookDetailCard
 import com.raychal.book.components.TopBar
 import com.raychal.book.navigation.MainActions
+import com.raychal.book.ui.theme.text
 import com.raychal.book.ui.theme.typography
 import com.raychal.book.utils.DetailViewState
 import com.raychal.book.viewModel.MainViewModel
@@ -67,7 +65,7 @@ fun BookDetails(viewModel: MainViewModel) {
                         color = MaterialTheme.colors.primaryVariant.copy(0.7F),
                         modifier = Modifier.padding(start = 20.dp, end = 20.dp)
                     )
-                    Spacer(modifier = Modifier.height(16.dp))
+                    Spacer(modifier = Modifier.height(8.dp))
                 }
             }
 

@@ -93,24 +93,23 @@ fun BookImageContentView(
             )
             Spacer(modifier = Modifier.height(6.dp))
             Text(
-                text = "by ".plus(authors.toString()),
+                text = "by. ".plus(authors.toString()),
                 style = typography.caption,
-                textAlign = TextAlign.Left,
+                textAlign = TextAlign.Center,
                 color = MaterialTheme.colors.primaryVariant.copy(0.7F)
             )
             if (date != null) {
                 Text(
-//                    text = "Published Date ".plus(formatLongDate(date)).ifEmpty { " " },
-                    text = if (date.isEmpty()) "" else "Published Date ".plus(formatLongDate(date)),
+                    text = if (date.isEmpty()) "Published Date : -" else "Published Date : ".plus(formatLongDate(date)),
                     style = typography.caption,
-                    textAlign = TextAlign.Left,
+                    textAlign = TextAlign.Center,
                     color = MaterialTheme.colors.primaryVariant.copy(0.7F)
                 )
             }
             Text(
-                text = "Status ".plus(status),
+                text = "Status : ".plus(status),
                 style = typography.caption,
-                textAlign = TextAlign.Left,
+                textAlign = TextAlign.Center,
                 color = MaterialTheme.colors.primaryVariant.copy(0.7F)
             )
             Spacer(modifier = Modifier.height(12.dp))

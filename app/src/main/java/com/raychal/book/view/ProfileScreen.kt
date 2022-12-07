@@ -50,16 +50,13 @@ fun Profile(viewModel: MainViewModel) {
         is ProfileViewState.Success -> {
             val profile = result.data
 
-            var darkMode by mutableStateOf(true)
+            Column(modifier = Modifier.fillMaxSize()) {
+                ProfileCard(profile.first().fullName, profile.first().nicName, profile.first().email, profile.first().photo)
+            }
 
             LazyColumn {
-                // Profile Card
                 item {
-                    ProfileCard(profile.first().fullName, profile.first().nicName, profile.first().email, profile.first().photo)
-                }
-
-                item {
-                    Spacer(modifier = Modifier.height(400.dp))
+                    Spacer(modifier = Modifier.height(670.dp))
                     Box(modifier = Modifier.fillMaxSize()) {
                         Text(
                             text = stringResource(id = R.string.version),
