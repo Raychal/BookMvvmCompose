@@ -18,9 +18,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
-import com.google.accompanist.flowlayout.FlowRow
 import com.raychal.book.ui.theme.typography
-import com.raychal.book.utils.DateFormatter.formatLongDate
 
 @Composable
 fun ProfileCard(
@@ -29,7 +27,6 @@ fun ProfileCard(
     email: String,
     thumbnailUrl: String
 ) {
-    // transparent white bg
     Box(
         Modifier
             .fillMaxWidth()
@@ -39,8 +36,6 @@ fun ProfileCard(
             .background(color = Color.Transparent),
         contentAlignment = Alignment.Center
     ) {
-
-        // white box layout
         Box(
             Modifier
                 .fillMaxWidth()
@@ -48,8 +43,6 @@ fun ProfileCard(
                 .clip(RoundedCornerShape(12.dp))
                 .background(MaterialTheme.colors.onSurface),
         )
-
-        // Content
         ProfileContentView(fullName, nicName, email, thumbnailUrl)
     }
 }
@@ -62,10 +55,7 @@ fun ProfileContentView(
     email: String,
     thumbnailUrl: String
 ) {
-    // content
     Column(modifier = Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-
-        // image
         Image(
             painter = rememberImagePainter(
                 data = thumbnailUrl
@@ -76,11 +66,8 @@ fun ProfileContentView(
                 .size(128.dp)
                 .clip(CircleShape)
                 .border(2.dp, MaterialTheme.colors.primaryVariant.copy(0.7F), CircleShape)
-//                .size(240.dp, 140.dp),
         )
-
         Spacer(modifier = Modifier.height(16.dp))
-
         Column(
             modifier = Modifier
                 .fillMaxWidth()

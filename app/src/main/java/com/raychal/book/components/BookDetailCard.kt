@@ -28,7 +28,6 @@ fun BookDetailCard(
     status: String,
     categories: List<String>
 ) {
-    // transparent white bg
     Box(
         Modifier
             .fillMaxWidth()
@@ -38,8 +37,6 @@ fun BookDetailCard(
             .background(color = Color.Transparent),
         contentAlignment = Alignment.Center
     ) {
-
-        // white box layout
         Box(
             Modifier
                 .fillMaxWidth()
@@ -47,8 +44,6 @@ fun BookDetailCard(
                 .clip(RoundedCornerShape(12.dp))
                 .background(MaterialTheme.colors.onSurface),
         )
-
-        // Content
         BookImageContentView(title, authors, thumbnailUrl, date, status, categories)
     }
 }
@@ -63,10 +58,7 @@ fun BookImageContentView(
     status: String,
     categories: List<String>
 ) {
-    // content
     Column(modifier = Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-
-        // image
         Image(
             painter = rememberImagePainter(
                 data = thumbnailUrl
@@ -75,9 +67,7 @@ fun BookImageContentView(
             modifier = Modifier
                 .size(240.dp, 140.dp),
         )
-
         Spacer(modifier = Modifier.height(16.dp))
-
         Column(
             modifier = Modifier
                 .fillMaxWidth()

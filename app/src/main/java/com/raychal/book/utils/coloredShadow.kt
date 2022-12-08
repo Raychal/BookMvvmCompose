@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
-// API LEVEL < 21
 fun Modifier.coloredShadow(
     color: Color,
     alpha: Float = 0.2f,

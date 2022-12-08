@@ -33,7 +33,6 @@ fun BookListScreen(
     viewModel: MainViewModel,
     actions: MainActions
 ) {
-
     when (val result = viewModel.books.value) {
         ViewState.Empty -> Text("No results found!")
         is ViewState.Error -> Text(text = "Error found: ${result.exception}")

@@ -8,14 +8,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.raychal.book.R
 
-// Set of Material typography styles to start with
 private val Grotesk = FontFamily(
     Font(R.font.grotesk_light),
     Font(R.font.grotesk_medium, FontWeight.W500),
     Font(R.font.grotesk_bold, FontWeight.Bold)
 )
 
-// Set of Material typography styles to start with
 val typography = Typography(
     h2 = TextStyle(
         fontFamily = Grotesk,

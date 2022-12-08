@@ -39,14 +39,11 @@ fun ItemBookList(
             .clip(RoundedCornerShape(20.dp))
             .padding(12.dp)
     ) {
-
-        // Row - Image + Content
         Row(
             modifier = Modifier.fillMaxWidth().background(MaterialTheme.colors.onSurface),
             horizontalArrangement = Arrangement.Start,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            // Image
             Image(
                 painter = rememberImagePainter(
                     data = thumbnailUrl
@@ -57,10 +54,7 @@ fun ItemBookList(
                     .padding(16.dp),
                 contentScale = ContentScale.Fit
             )
-
             Spacer(modifier = Modifier.width(16.dp))
-
-            // Content
             Column {
                 Text(
                     text = "by ".plus(author),
@@ -81,9 +75,7 @@ fun ItemBookList(
                     }
                 }
             }
-
         }
-
     }
 }
 
@@ -100,12 +92,3 @@ fun ChipView(category: String) {
         Text(text = category, style = typography.caption, color = primary)
     }
 }
-
-//.coloredShadow(
-//color = MaterialTheme.colors.primary,
-//alpha = 0.2F,
-//12.dp,
-//shadowRadius = 20.dp,
-//offsetX = 0.dp,
-//offsetY = 4.dp
-//)

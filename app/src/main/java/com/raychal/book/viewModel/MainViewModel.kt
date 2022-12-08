@@ -24,22 +24,17 @@ class MainViewModel: ViewModel() {
     val bookDetails = _detailViewState.asStateFlow()
     val profile = _profileViewState.asStateFlow()
 
-    // helps to format the JSON
     val format = Json {
         ignoreUnknownKeys = true
         prettyPrint = true
         isLenient = true
     }
 
-    // get all the data from the Book.json
     fun getAllBooks(context: Context) = viewModelScope.launch {
         try {
-            // read JSON file
             val myJson = context.assets.open("books.json").bufferedReader().use {
                 it.readText()
             }
-
-            // format JSON
             val bookList = format.decodeFromString<List<BookItem>>(myJson)
             _viewState.value = ViewState.Success(bookList)
         } catch (e: Exception) {
@@ -47,33 +42,23 @@ class MainViewModel: ViewModel() {
         }
     }
 
-    // get book by ID
     fun getBookByID(context: Context, isbnNo:String) = viewModelScope.launch {
         try {
-
-            // read JSON File
             val myJson = context.assets.open("books.json").bufferedReader().use {
                 it.readText()
             }
-
-            // format JSON
             val bookList = format.decodeFromString<List<BookItem>>(myJson) .filter { it.isbn.contentEquals(isbnNo)}.first()
             _detailViewState.value = DetailViewState.Success(bookList)
-
         } catch (e: Exception){
             _detailViewState.value = DetailViewState.Error(e)
         }
     }
 
-    // get the data from the Profile.json
     fun getProfile(context: Context) = viewModelScope.launch {
         try {
-            // read JSON file
             val myJson = context.assets.open("profile.json").bufferedReader().use {
                 it.readText()
             }
-
-            // format JSON
             val profile = format.decodeFromString<List<Profile>>(myJson)
             _profileViewState.value = ProfileViewState.Success(profile)
         } catch (e: Exception) {

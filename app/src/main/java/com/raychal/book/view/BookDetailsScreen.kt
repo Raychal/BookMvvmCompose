@@ -1,13 +1,11 @@
 package com.raychal.book.view
 
 import android.annotation.SuppressLint
-import android.util.Log
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -15,7 +13,6 @@ import com.raychal.book.R
 import com.raychal.book.components.BookDetailCard
 import com.raychal.book.components.TopBar
 import com.raychal.book.navigation.MainActions
-import com.raychal.book.ui.theme.text
 import com.raychal.book.ui.theme.typography
 import com.raychal.book.utils.DetailViewState
 import com.raychal.book.viewModel.MainViewModel
@@ -28,7 +25,6 @@ fun BookDetailsScreen(
     Scaffold(topBar = {
         TopBar(title = stringResource(id = R.string.text_bookDetails), actions = actions)
     }) {
-
         BookDetails(viewModel = viewModel)
     }
 }
@@ -43,12 +39,10 @@ fun BookDetails(viewModel: MainViewModel) {
             val book = result.data
 
             LazyColumn {
-                // Book Details Card
                 item {
                     BookDetailCard(book.title, book.authors, book.thumbnailUrl, book.publishedDate, book.status, book.categories)
                 }
 
-                // Description
                 item {
                     Spacer(modifier = Modifier.height(24.dp))
                     Text(
@@ -68,7 +62,6 @@ fun BookDetails(viewModel: MainViewModel) {
                     Spacer(modifier = Modifier.height(8.dp))
                 }
             }
-
         }
         DetailViewState.Empty -> Text("No results found!")
     }

@@ -22,6 +22,7 @@ import java.lang.IllegalStateException
 object EndPoints {
     const val ID = "id"
 }
+
 @ExperimentalComposeUiApi
 @Composable
 fun NavGraph() {
@@ -33,7 +34,6 @@ fun NavGraph() {
         navController,
         startDestination = Screen.BookList.route
     ) {
-        // home
         composable(Screen.BookList.route) {
             val viewModel: MainViewModel = viewModel(
                 factory = HiltViewModelFactory(LocalContext.current, it)
@@ -41,8 +41,6 @@ fun NavGraph() {
             viewModel.getAllBooks(context = context)
             BookListScreen(viewModel, actions)
         }
-
-        // details
         composable(
             "${Screen.Details.route}/{id}",
             arguments = listOf(navArgument(EndPoints.ID) { type = NavType.StringType })
@@ -53,8 +51,6 @@ fun NavGraph() {
             viewModel.getBookByID(context = context, isbnNo = isbnNo)
             BookDetailsScreen(viewModel, actions)
         }
-
-        // profile
         composable(Screen.Profile.route) {
             val viewModel: MainViewModel = viewModel(
                 factory = HiltViewModelFactory(LocalContext.current, it)
